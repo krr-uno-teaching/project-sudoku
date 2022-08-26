@@ -150,7 +150,7 @@ The program can be automatically tested  by running:
 python autograder.py --question=2
 ```
 ### Question 3: Generalized Sudoku (10 points)
-For this question, we will represent the Generalized Sudoku. In the Generalized Sudoku the board can have any length that is a perfect square. Recall that a perfect square is a number that can be represented as the square of a natural number n. For the Generalized Sudoku, the instance will have a line specify the length of a side of the subgrid. For instance, for a 9x9 sudoku, we are going to add the line
+For this question, we will represent the Generalized Sudoku. In the Generalized Sudoku the board can have any length that is a perfect square. Recall that a perfect square is a number that can be represented as the square of a natural number n. For the Generalized Sudoku, the instance will have a line specifying the length of a side of the subgrid. For instance, for a 9x9 sudoku, we are going to add the line
 ```
 #const n = 3
 ```
