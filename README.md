@@ -78,7 +78,7 @@ You can get more information about the result of the test by clicking successive
 
 Now copy the file ```sudoku.lp``` to ```sudoku1a.lp``` and update the repository following the same steps as above. Note that when you create a new commit you should give a meaningful comment. For instance, now you can create the new commit using the command
 ```sh
-git commit -am"creating sudoku1a.lp
+git commit -am"creating sudoku1a.lp"
 ```
 Every time you push a new commit, your solution will be tested automatically. This also applies to the following questions.
 **You should have obtained now 10 points.**
