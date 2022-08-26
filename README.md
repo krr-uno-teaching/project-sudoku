@@ -8,9 +8,9 @@ One example of the 9x9 Sudoku is shown in the next figure. The left side shows t
 ![Image of a Sudoku Board](img/sudoku.png)
 
 The initial state of the grid is represented by facts of predicate initial/3:
-
-```initial(X,Y,N). % initially cell [X,Y] contains number N```
-
+```
+initial(X,Y,N). % initially cell [X,Y] contains number N
+```
 For instance, the example shown in the previous figure is represented by the following facts:
 
 ```
