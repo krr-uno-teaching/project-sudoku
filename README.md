@@ -53,19 +53,19 @@ Do not modify the file ```autograder.py``` nor any of the content of the directo
 ## Question 0: Git and GitHub (10 points)
 
 We will use Git and GitHub as framework for developing this project. This question will help you to familiarize your self with these tools. The first step is to clone this repository into your computer. For this, click the button **Code** in right top corner of this page and copy the URL. Then, go to a terminal in your computer and type
-```
+```sh
 git clone <URL>
 ```
 A new directory with the name of this project will be created. Now create a file ```group.txt``` and write the name of each of the components of the group in a different line (if you work alone just add your name in the first line). Add it to the list of tracked files typing
-```
+```sh
 git add group.txt
 ```
 Commit the change to the repository with the command
-```
+```sh
 git commit -am"creating group.txt
 ```
 Finally, update the GitHub repository typing the command 
-```
+```sh
 git push
 ```
 After a few minutes you will be able to see the result of the test in the **Actions** tab.
@@ -77,7 +77,7 @@ You can get more information about the result of the test by clicking successive
 3. "Run education/autograding@v1".
 
 Now copy the file ```sudoku.lp``` to ```sudoku1a.lp``` and update the repository following the same steps as above. Note that when you create a new commit you should give a meaningful comment. For instance, now you can create the new commit using the command
-```
+```sh
 git commit -am"creating sudoku1a.lp
 ```
 Every time you push a new commit, your solution will be tested automatically. This also applies to the following questions.
@@ -94,18 +94,18 @@ To begin with, you will represent a 4x4 Sudoku. Later you will modify it to hand
 For this question, you should copy file sudoku.lp to sudoku1a.lp and modify the latter. You should fill the board with a number between 1 and 4 in each cell such that each column and each row contains all numbers between 1 and 4.
 
 The following command can be used to find all answer sets of a particular instance stored in file instance.lp:
-```
+```sh
 clingo sudoku.lp instance.lp 0
 ```
 To receive credit for this question, your code must correctly solve all instances in the folder instances/4x4. Solutions to this question can be found in the folder solutions/q1a.
 
 You can automatically test your code running
-```
+```sh
 python autograder.py --question=1a
 ```
 The timeout per instance is 100 seconds. This timeout also applies to the following questions.
 If the autograder tells you that your code does not correctly solve a particular instance, then you can check the expected solutions by checking the file
-```
+```sh
 solutions/q1a/<instance>.json
 ```
 Solutions for subsequent questions can be found by chaging the folder ```q1a``` for the corresponding question.
@@ -122,7 +122,7 @@ The top right most four cells belong to the subgrid 2.
 The bottom left most four cells belong to the subgrid 3.
 The bottom right most four cells belong to the subgrid 4.
 You can automatically test your code running
-```
+```sh
 python autograder.py --question=1b
 ```
 ### Question 1c (15 points):
@@ -137,7 +137,7 @@ and no other show statements.
 To receive credit for this question, your code must correctly solve all instances in the folder instances/4x4. Solutions to this question can be found in the folder solutions/q1c.
 
 You can automatically test your code running
-```
+```sh
 python autograder.py --question=1c
 ```
 ## Question 2: 9x9 Sudoku (30 points)
@@ -146,7 +146,7 @@ For this question, we will represent a 9x9 Sudoku. Start by copying the file to 
 To receive credit for this question, the program must correctly solve all instances in the folder instances/9x9. Solutions to this question can be found in the folder solutions/q2.
 
 The program can be automatically tested  by running:
-```
+```sh
 python autograder.py --question=2
 ```
 ### Question 3: Generalized Sudoku (10 points)
@@ -161,14 +161,7 @@ to state that the length of a side of the subgrid is 3. For the 4x4, we will add
 To receive credit for this question, the program must correctly solve all instances in the folders instances/q3/1x1, instances/q3/4x4, instances/q3/9x9 and instances/q3/16x16. Solutions for the 4x4 and 9x9 cases can be found in the folders of previous questions. Note that his instances are the same as the instances in instances/q3/4x4 and instances/q3/9x9 but adding the above lines. Solutions for the 1x1 and 16x16 cases can be found in the folders solutions/q2/1x1 and solutions/q2/16x16. Note that 1x1 case only has one possible solution.
 
 The program can be automatically tested by running:
-```
+```sh
 python autograder.py --question=3
 ```
 **Be sure you have committed your changes, pushed them to the GitHub repository and see the grade you expected to receive in the Actions tab in GitHub.**
-
- 
-
-
-
-
-
