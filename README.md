@@ -1,7 +1,7 @@
 # Sudoku Project
 The first assignment consist on developing a sudoku solver.
 
-The task of this project is to solve a Generalized Sudoku puzzle using ASP. The goal of the traditional Sudoku game is to fill a 9x9 grid with digits so that each column, each row and each of the nine 3x3 sub-grids that compose the grid contains all numbers from 1 to 9.  In other words, the grid has to be filled with numbers from 1 to 9 so that the same number does not appear twice in the same row, column or in any of the nine 3x3 sub-grids of the 9x9 playing board. Initially the grid is partially filled. The Generalized Sudoku problem is similar, but instead of using a 9x9 board it uses a mxm board for some perfect square m (See Question 3 below for more detail).
+The task of this project is to solve a Generalized Sudoku puzzle using ASP. The goal of the traditional Sudoku game is to fill a 9x9 grid with digits so that each column, each row and each of the nine 3x3 sub-grids that compose the grid contains all numbers from 1 to 9.  In other words, the grid has to be filled with numbers from 1 to 9 so that the same number does not appear twice in the same row, column or in any of the nine 3x3 sub-grids of the 9x9 playing board. Initially the grid is partially filled. The Generalized Sudoku problem is similar, but instead of using a 9x9 board it uses a ```mxm``` board for some perfect square m (See Question 3 below for more detail).
 
 One example of the 9x9 Sudoku is shown in the next figure. The left side shows the initial configuration, and the right side shows the same puzzle with solution numbers marked in red.
 
@@ -91,9 +91,9 @@ https://github.com/Advanced-Concepts-Programming-Languages/github-starter-course
 To begin with, you will represent a 4x4 Sudoku. Later you will modify it to handle the 9x9 case.
 
 ### Question 1a (25 points):
-For this question, you should copy file sudoku.lp to sudoku1a.lp and modify the latter. You should fill the board with a number between 1 and 4 in each cell such that each column and each row contains all numbers between 1 and 4.
+For this question, you should copy file ```sudoku.lp``` to ```sudoku1a.lp``` and modify the latter. You should fill the board with a number between 1 and 4 in each cell such that each column and each row contains all numbers between 1 and 4.
 
-The following command can be used to find all answer sets of a particular instance stored in file instance.lp:
+The following command can be used to find all answer sets of a particular instance stored in file ```instance.lp```:
 ```sh
 clingo sudoku.lp instance.lp 0
 ```
@@ -108,10 +108,10 @@ If the autograder tells you that your code does not correctly solve a particular
 ```sh
 solutions/q1a/<instance>.json
 ```
-Solutions for subsequent questions can be found by chaging the folder ```q1a``` for the corresponding question.
+Solutions for subsequent questions can be found by changing the folder ```q1a``` for the corresponding question.
 
 ### Question 1b (10 points):
-For this question, you should copy sudoku1a.lp to sudoku1b.lp and modify the latter. All stable models of this new program must contain facts of the form:
+For this question, you should copy ```sudoku1a.lp``` to ```sudoku1b.lp``` and modify the latter. All stable models of this new program must contain facts of the form:
 ```
 subgrid(x,y,g)
 ```
@@ -126,7 +126,7 @@ You can automatically test your code running
 python autograder.py --question=1b
 ```
 ### Question 1c (15 points):
-For this question, you should copy sudoku1b.lp to sudoku1c.lp and modify the latter. Each stable model of this program must be a solution to the 4x4 sudoku. That is, the board must be filled with a number between 1 and 4 in each cell such that each column, each row and each subgrid contains all numbers between 1 and 4.
+For this question, you should copy ```sudoku1b.lp``` to ```sudoku1c.lp``` and modify the latter. Each stable model of this program must be a solution to the 4x4 sudoku. That is, the board must be filled with a number between 1 and 4 in each cell such that each column, each row and each subgrid contains all numbers between 1 and 4.
 
 Only the facts of the form sudoku(x,y,n) should be printed in the stable model. For this your code should contain a statement of the form
 ```
@@ -141,7 +141,7 @@ You can automatically test your code running
 python autograder.py --question=1c
 ```
 ## Question 2: 9x9 Sudoku (30 points)
-For this question, we will represent a 9x9 Sudoku. Start by copying the file to sudoku1c.lp to sudoku2.lp and modify the later to solve the 9x9 sudoku. 
+For this question, we will represent a 9x9 Sudoku. Start by copying the file to ```sudoku1c.lp``` to ```sudoku2.lp``` and modify the later to solve the 9x9 sudoku. 
 
 To receive credit for this question, the program must correctly solve all instances in the folder instances/9x9. Solutions to this question can be found in the folder solutions/q2.
 
