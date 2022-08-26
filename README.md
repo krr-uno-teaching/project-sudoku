@@ -27,11 +27,10 @@ initial(9,5,8). initial(9,8,7). initial(9,9,9).
 ```
 
 The solution is represented by atoms of predicate sudoku/3:
-
-```sudoku(X,Y,N). % the cell [X,Y] contains number N```
-
+```
+sudoku(X,Y,N). % the cell [X,Y] contains number N
+```
 For instance, the solution of the previous figure consists of the following atoms:
-
 ```
 sudoku(1,1,5) sudoku(1,2,3) ... sudoku(1,8,1) sudoku(1,9,2)
 ...
