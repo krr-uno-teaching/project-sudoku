@@ -62,7 +62,7 @@ git add group.txt
 ```
 Commit the change to the repository with the command
 ```sh
-git commit -am"creating group.txt
+git commit -am"creating group.txt"
 ```
 Finally, update the GitHub repository typing the command 
 ```sh
