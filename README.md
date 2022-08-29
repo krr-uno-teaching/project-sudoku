@@ -95,7 +95,7 @@ For this question, you should copy file ```sudoku.lp``` to ```sudoku1a.lp``` and
 
 The following command can be used to find all answer sets of a particular instance stored in file ```instance.lp```:
 ```sh
-clingo sudoku.lp instance.lp 0
+clingo sudoku1a.lp instance.lp 0
 ```
 To receive credit for this question, your code must correctly solve all instances in the folder instances/4x4. Solutions to this question can be found in the folder solutions/q1a.
 
