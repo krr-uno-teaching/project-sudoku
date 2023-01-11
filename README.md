@@ -1,7 +1,7 @@
 # Sudoku Project
 The first assignment consist on developing a sudoku solver.
 
-The task of this project is to solve a Generalized Sudoku puzzle using ASP. The goal of the traditional Sudoku game is to fill a 9x9 grid with digits so that each column, each row and each of the nine 3x3 sub-grids that compose the grid contains all numbers from 1 to 9.  In other words, the grid has to be filled with numbers from 1 to 9 so that the same number does not appear twice in the same row, column or in any of the nine 3x3 sub-grids of the 9x9 playing board. Initially the grid is partially filled. The Generalized Sudoku problem is similar, but instead of using a 9x9 board it uses a ```mxm``` board for some perfect square m (See Question 3 below for more detail).
+The task of this project is to solve a Generalized Sudoku puzzle using ASP. The goal of the traditional Sudoku game is to fill a 9x9 grid with digits so that each column, each row and each of the nine 3x3 sub-grids that compose the grid contains all numbers from 1 to 9.  In other words, the grid has to be filled with numbers from 1 to 9 so that the same number does not appear twice in the same row, column or in any of the nine 3x3 sub-grids of the 9x9 playing board. Initially the grid is partially filled. 
 
 One example of the 9x9 Sudoku is shown in the next figure. The left side shows the initial configuration, and the right side shows the same puzzle with solution numbers marked in red.
 
@@ -46,7 +46,7 @@ The content of the **main** branch of your GitHub repository at the time of the 
 
 **Start as soon as possible to avoid running out of time.**
 
-Do not modify the file ```autograder.py``` nor any of the content of the directories ```.git```, ```.github```, ```img```, ```instances```, ```questions``` and ``` solutions```. Modifying some of this directories may prevent your code to work or cause lost of your progress. 
+Do not modify the file ```autograder.py``` nor any of the content of the directories ```.git```, ```.github```, ```img```, ```instances```, ```questions``` and ``` solutions```. Modifying some of these directories may prevent your code to work or cause lost of your progress. 
 
 **Academic Dishonesty**: We will be checking your code against other submissions in the class for logical redundancy. If you copy someone else's code and submit it with minor changes, we will know. These cheat detectors are quite hard to fool, so please don't try. Modifying the behavior of the autograder in any way is also cheating. We trust you all to submit your own work only and to do it in honest way; please don't let us down. If you do, we will pursue the strongest consequences available to us.
 
@@ -70,6 +70,7 @@ git push
 ```
 After a few minutes you will be able to see the result of the test in the **Actions** tab.
 **You should have obtained 5 points.**
+Failing to correctly complete this step may prevent us for identify you as the owner of the repository!
 
 You can get more information about the result of the test by clicking successively on:
 1. The specific test.
@@ -86,6 +87,8 @@ Every time you push a new commit, your solution will be tested automatically. Th
 We recommend that you create new commits frequently when doing the rest of this project. If at some point you realize you did a mistake, you can revert to a previous commit. Pushing to the GitHub repository may also help you in case that you accidentally lose your local copy. If you have doubts about Git or Github, or you can learn more about it, you can read the tutorial in following link:
 
 https://github.com/Advanced-Concepts-Programming-Languages/github-starter-course
+
+In addition, if you submit a question to the instructors, please include the link to your GitHub repository and be sure that you have pushed the latest version of your code.
 
 ## Question 1: 4x4 Sudoku
 To begin with, you will represent a 4x4 Sudoku. Later you will modify it to handle the 9x9 case.
