@@ -110,7 +110,7 @@ solutions/q1a/<instance>.json
 ```
 Solutions for subsequent questions can be found by changing the folder ```q1a``` for the corresponding question.
 
-### Question 1b (10 points):
+### Question 1b (15 points):
 For this question, you should copy ```sudoku1a.lp``` to ```sudoku1b.lp``` and modify the latter. All stable models of this new program must contain facts of the form:
 ```
 subgrid(x,y,g)
@@ -140,7 +140,7 @@ You can automatically test your code running
 ```sh
 python autograder.py --question=1c
 ```
-## Question 2: 9x9 Sudoku (30 points)
+## Question 2: 9x9 Sudoku (35 points)
 For this question, we will represent a 9x9 Sudoku. Start by copying the file to ```sudoku1c.lp``` to ```sudoku2.lp``` and modify the later to solve the 9x9 sudoku. 
 
 To receive credit for this question, the program must correctly solve all instances in the folder instances/9x9. Solutions to this question can be found in the folder solutions/q2.
@@ -148,20 +148,5 @@ To receive credit for this question, the program must correctly solve all instan
 The program can be automatically tested  by running:
 ```sh
 python autograder.py --question=2
-```
-## Question 3: Generalized Sudoku (10 points)
-For this question, we will represent the Generalized Sudoku. In the Generalized Sudoku the board can have any length that is a perfect square. Recall that a perfect square is a number that can be represented as the square of a natural number n. For the Generalized Sudoku, the instance will have a line specifying the length of a side of the subgrid. For instance, for a 9x9 sudoku, we are going to add the line
-```
-#const n = 3
-```
-to state that the length of a side of the subgrid is 3. For the 4x4, we will add the line
-```
-#const n = 2
-```
-To receive credit for this question, the program must correctly solve all instances in the folders instances/q3/1x1, instances/q3/4x4, instances/q3/9x9 and instances/q3/16x16. Solutions for the 4x4 and 9x9 cases can be found in the folders of previous questions. Note that his instances are the same as the instances in instances/q3/4x4 and instances/q3/9x9 but adding the above lines. Solutions for the 1x1 and 16x16 cases can be found in the folders solutions/q2/1x1 and solutions/q2/16x16. Note that 1x1 case only has one possible solution.
-
-The program can be automatically tested by running:
-```sh
-python autograder.py --question=3
 ```
 **Be sure you have committed your changes, pushed them to the GitHub repository and see the grade you expected to receive in the Actions tab in GitHub.**
