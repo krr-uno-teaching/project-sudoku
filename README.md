@@ -130,7 +130,7 @@ python autograder.py --question=1b
 ### Question 1c (15 points):
 For this question, you should copy ```sudoku1b.lp``` to ```sudoku1c.lp``` and modify the latter. Each stable model of this program must be a solution to the 4x4 sudoku. That is, the board must be filled with a number between 1 and 4 in each cell such that each column, each row and each subgrid contains all numbers between 1 and 4.
 
-Only the facts of the form sudoku(x,y,n) should be printed in the stable model. For this your code should contain a statement of the form
+Only the facts of the form sudoku(x,y,n) should be printed in the stable model. For this, your code should contain a statement of the form
 ```
 #show sudoku/3.
 ```
