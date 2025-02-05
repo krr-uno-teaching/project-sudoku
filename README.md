@@ -38,7 +38,7 @@ sudoku(9,1,3) sudoku(9,2,4) ... sudoku(9,8,7) sudoku(9,9,9)
 ```
 
 ## Formalities.
-You can work on the solution alone or in groups of two people. Different groups have to submit different solutions, in case of plagiarism all groups involved will fail the project.
+You can work on the solution by yourself or in groups. Different groups have to submit different solutions, in case of plagiarism all groups involved will fail the project.
 
 Your solution has to correctly encode all solutions for every instance. Our test instances usually have several solutions. Your code will be autograded for technical correctness. However, the correctness of your implementation -- not the autograder's judgments -- will be the final judge of your score. If necessary, we will review and grade assignments individually to ensure that you receive due credit for your work.
 
